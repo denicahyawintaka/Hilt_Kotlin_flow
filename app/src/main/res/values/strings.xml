@@ -1,5 +1,14 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Movie App</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="movie_overview">OVERVIEW</string>
+    <string name="movie_release">Release :</string>
+    <string name="movie_popularity">Popularity :</string>
+    <string name="movie_rating">Rating :</string>
+    <string name="movie_original_title">Original Title :</string>
+    <string name="movie_tab">MOVIES</string>
+    <string name="tvshow_tab">TV SHOW</string>
+    <string name="error_text">Error while fetching data</string>
+    <string name="detail_page">Detail Page</string>
 </resources>

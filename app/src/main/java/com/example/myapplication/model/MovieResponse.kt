@@ -1,5 +1,5 @@
 package com.example.myapplication.model
 
-data class Response(
+data class MovieResponse(
     val results: List<Movie>,
 )

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="space_16dp">16dp</dimen>
-    <dimen name="sp_18">18sp</dimen>
     <dimen name="space_8dp">8dp</dimen>
+    <dimen name="sp_22">22sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="radius_4dp">4dp</dimen>
 </resources>

@@ -6,7 +6,7 @@
     android:background="@color/black">
 
     <ProgressBar
-        android:id="@+id/movieProgressBar"
+        android:id="@+id/tvShowProgressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="gone"
@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvMovie"
+        android:id="@+id/rvTvShow"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"

@@ -2,7 +2,9 @@ package com.example.myapplication.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.myapplication.R
 import com.example.myapplication.databinding.ActivityMainBinding
+import com.example.myapplication.ui.ViewPagerAdapter.Companion.MOVIE_TAB
 import com.google.android.material.tabs.TabLayoutMediator
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -18,6 +20,10 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
+        setupTab()
+    }
+
+    private fun setupTab() {
         viewPagerAdapter = ViewPagerAdapter(this)
         binding.pager.adapter = viewPagerAdapter
 
@@ -25,8 +31,10 @@ class MainActivity : AppCompatActivity() {
             binding.tabLayout, binding.pager
         ) { tab, position ->
             when (position) {
-                0 -> tab.text = "MOVIES"
-                else -> tab.text = "TV SHOW"
+                MOVIE_TAB -> {
+                    tab.text = getString(R.string.movie_tab)
+                }
+                else -> tab.text = getString(R.string.tvshow_tab)
             }
         }.attach()
     }
